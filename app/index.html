@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  
+<!--build:css css/styles.min.css-->
+<!-- <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/another-stylesheet.css"> -->
+<!--endbuild-->
+
+</head>
+<body>
+<script type="text/javascript">
+function incrementString (strng) {
+  re = /\D+/ig;
+  x = strng.replace(re, '');
+  // !isNaN(x) ? x + ' - число' : x + ' - не число';
+  console.log(strng);
+  console.log(x);
+}
+
+incrementString("foobar001");
+incrementString("foo");
+incrementString("");
+
+</script>
+
+<!--build:js js/main.min.js -->
+<!-- <script src="js/lib/a-library.js"></script>
+<script src="js/lib/another-library.js"></script>
+<script src="js/main.js"></script> -->
+<!-- endbuild -->
+
+</body>
+</html>
